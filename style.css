@@ -1,0 +1,225 @@
+body {
+  --color-green: #56a392;
+  --color-purple: #8459ac;
+  --color-dark-purple: #1e0f2d;
+  --color-white: #ededed;
+  --color-gray: #383434;
+  width: 100vw;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: var(--color-white);
+  text-align: center;
+
+  font-family: "Satisfy", cursive;
+  font-family: "Sacramento", cursive;
+}
+.font__sans-serif {
+  font-family: "Amatic SC", cursive;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+.font__medium {
+  font-size: 1.5rem;
+}
+.font__bigger {
+  font-size: 2rem;
+}
+.font__dark {
+  color: var(--color-gray);
+}
+nav {
+  background-color: var(--color-green);
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav span {
+  margin: 1rem;
+}
+nav ul li {
+  display: inline;
+  list-style: none;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+nav ul li:hover {
+  color: var(--color-purple);
+  border: 1px solid var(--color-purple);
+  transition-duration: 2s;
+}
+section {
+  min-height: 100vh;
+}
+#section--title {
+  background-image: url("./img/bee-felten-leidel-1274559-unsplash.jpg");
+  background-size: cover;
+}
+.section--sign {
+  background-color: var(--color-green);
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+button {
+  background-color: var(--color-purple);
+  box-shadow: 2px 2px 8px 0px #5a5a4e;
+  width: 10rem;
+  height: 3rem;
+  align-self: center;
+  margin: 1rem;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+button:hover {
+  background-color: var(--color-dark-purple);
+}
+button:active {
+  transform: translateX(5px) translateY(5px);
+}
+#section--order {
+  background-image: linear-gradient(#1e0f2d, black);
+  display: grid;
+  grid-template-areas:
+    "slate1 slate2 slate3"
+    ". button .";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  padding: 4rem;
+}
+.order--slate {
+  width: 100%;
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.order--slate p,
+.order--slate h3 {
+  padding: 1rem;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  background: white;
+}
+
+.order--slate img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  z-index: -1;
+}
+.order--slate img:hover {
+  animation: enlarge-slate 2s;
+}
+@keyframes enlarge-slate {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+#order--charms {
+  grid-area: slate1;
+}
+#order--potions {
+  grid-area: slate2;
+}
+#order--spells {
+  grid-area: slate3;
+}
+#order--button {
+  background-color: var(--color-green);
+  grid-area: button;
+}
+#order-button:hover {
+  background-color: #305d53;
+}
+#section--awards {
+  background-color: var(--color-purple);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#section--story {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.story--wrapper {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+}
+
+.story--wrapper p {
+  max-width: 500px;
+  text-align: left;
+  border-left: 3px solid var(--color-purple);
+  padding-left: 1rem;
+}
+.story--wrapper img {
+  max-height: 30vh;
+  border-radius: 1rem;
+  margin: 2rem;
+}
+.section--offer {
+  min-height: 60vh;
+  display: grid;
+  grid-template-areas:
+    "title picture"
+    "text picture";
+  grid-gap: 1rem 2rem;
+  justify-items: center;
+  padding: 2rem;
+}
+.section--offer h3 {
+  display: inline;
+  grid-area: title;
+  align-self: end;
+  border-bottom: 1px solid var(--color-white);
+}
+.section--offer p {
+  grid-area: text;
+  align-self: baseline;
+  font-size: 1.5rem;
+}
+.section--offer img {
+  grid-area: picture;
+  align-self: center;
+  width: 100%;
+}
+#section--charms,
+#section--spells {
+  background-color: var(--color-dark-purple);
+}
+
+#section--potions {
+  background-color: var(--color-green);
+  grid-template-areas:
+    "picture title"
+    "picture text";
+}
+.section--testimony {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.icon {
+  max-width: 10vh;
+  min-width: 100px;
+}
