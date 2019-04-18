@@ -13,13 +13,13 @@
   </head>
   <body>
     <nav>
-      <span>Trig Periapt</span>
+      <span id="brand">Trig Periapt</span>
       <ul>
-        <li>Order</li>
-        <li>About us</li>
-        <li>Charms</li>
-        <li>Potions</li>
-        <li>Spells</li>
+        <li><a href="#section--order">Order</a></li>
+        <li><a href="#section--story">About us</a></li>
+        <li><a href="#section--charms">Charms</a></li>
+        <li><a href="#section--potions">Potions</a></li>
+        <li><a href="#section--spells">Spells</a></li>
       </ul>
       <span>+001 666 081</span>
     </nav>
@@ -31,29 +31,41 @@
       <button class="font__bigger font__sans-serif">Sign</button>
     </div>
     <section id="section--order">
-      <div id="order--charms" class="order--slate">
-        <img src="img/joanna-kosinska-627636-unsplash.jpg" alt="" />
-        <h3 class="font__medium font__dark">Charms</h3>
-        <p class=" font__dark">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et.
-        </p>
-      </div>
-      <div id="order--potions" class="order--slate">
-        <img src="img/katherine-hanlon-242211-unsplash.jpg" alt="" />
-        <h3 class="font__medium font__dark">Potions</h3>
-        <p class=" font__dark">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et.
-        </p>
-      </div>
-      <div id="order--spells" class="order--slate">
-        <img src="img/muhammad-haikal-sjukri-604583-unsplash.jpg" alt="" />
-        <h3 class="font__medium font__dark">Spells</h3>
-        <p class=" font__dark">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et.
-        </p>
+      <div class="order--wrapper">
+        <div id="order--charms" class="order--slate">
+          <img
+            src="img/joanna-kosinska-627636-unsplash.jpg"
+            alt="crystals, tied up dry leaves, a piece of wood and a small black corn cob"
+          />
+          <h3 class="font__medium font__dark">Charms</h3>
+          <p class=" font__dark">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et.
+          </p>
+        </div>
+        <div id="order--potions" class="order--slate">
+          <img
+            src="img/katherine-hanlon-242211-unsplash.jpg"
+            alt="hand puring a liquid into a mortar"
+          />
+          <h3 class="font__medium font__dark">Potions</h3>
+          <p class=" font__dark">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et.
+          </p>
+        </div>
+        <div id="order--spells" class="order--slate">
+          <img
+            src="img/muhammad-haikal-sjukri-604583-unsplash.jpg"
+            alt="book
+          titled 'moon: the universe is even bigger' "
+          />
+          <h3 class="font__medium font__dark">Spells</h3>
+          <p class=" font__dark">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et.
+          </p>
+        </div>
       </div>
       <button id="order--button" class="font__bigger font__sans-serif">
         Order
@@ -62,15 +74,27 @@
     <div id="section--awards">
       <span class="font__bigger font__sans-serif">Awards and recognition</span>
       <div id="awards">
-        <img class="icon" src="img/iconfinder_Monster_2913115.png" alt="" /><img
+        <img
           class="icon"
-          src="img/iconfinder_Monster_2913115.png"
-          alt=""
+          src="img/magic-wand.png"
+          alt="a wand with a star at the end"
+          title="Barnabus Finkley Prize for Exceptional Spell-Casting"
         /><img
           class="icon"
-          src="img/iconfinder_Monster_2913115.png"
-          alt=""
-        /><img class="icon" src="img/iconfinder_Monster_2913115.png" alt="" />
+          src="img/tube.png"
+          alt="a bubbling concoction"
+          title="Most Potent Potions"
+        /><img
+          class="icon"
+          src="img/plant.png"
+          alt="a leaf"
+          title="Herbology Award"
+        /><img
+          class="icon"
+          src="img/magician-hat.png"
+          alt="a witch's hat with stars on in"
+          title="Best Dressed Witch Award"
+        />
       </div>
     </div>
     <section id="section--story">
@@ -83,44 +107,54 @@
           rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
           ipsum dolor sit amet.
         </p>
-        <img src="img/photo-1477313372947-d68a7d410e9f.jpeg" alt="" />
+        <img src="img/photo-1477313372947-d68a7d410e9f.jpeg" alt="a person kneeling with an animal's skull in their hands, surrounded by pumpkins and candles" />
       </div>
+      <img class="icon" src="img/up-arrow.png" alt="swirl" />
     </section>
     <section id="section--charms" class="section--offer">
-      <h3 class="font__sans-serif">Charms</h3>
-      <p class="font__sans-serif">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et.
-      </p>
-      <img src="img/sweet-ice-cream-photography-597745-unsplash.jpg" alt="" />
+      <div class="offer--wrapper">
+        <h3 class="font__sans-serif">Charms</h3>
+        <p class="font__sans-serif">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et.
+        </p>
+        <button class="font__sans-serif button__green">Order a charm now</button>
+      </div>
+      <img src="img/sweet-ice-cream-photography-597745-unsplash.jpg" alt="candles and dry plants" />
     </section>
     <div class="section--testimony">
       <p class="font__medium font__dark">
         „Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.”
       </p>
-      <img class="icon" src="img/iconfinder_Monster_2913115.png" alt="" />
+      <img class="icon" src="img/iconfinder_Orc_2913114.png" alt="an orc" />
     </div>
     <section id="section--potions" class="section--offer">
-      <img src="img/tikkho-maciel-113477-unsplash.jpg" alt="" />
-      <h3 class="font__sans-serif">Potions</h3>
-      <p class="font__sans-serif">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et.
-      </p>
+      <img src="img/tikkho-maciel-113477-unsplash.jpg" alt="cauldrons over a fire" />
+      <div class="offer--wrapper">
+        <h3 class="font__sans-serif">Potions</h3>
+        <p class="font__sans-serif">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et.
+        </p>
+        <button class="font__sans-serif">Order a potion now</button>
+      </div>
     </section>
     <div class="section--testimony">
-      <img class="icon" src="img/iconfinder_Monster_2913115.png" alt="" />
+      <img class="icon" src="img/iconfinder_Grim_Reaper_2913100.png" alt="grim reaper" />
       <p class="font__medium font__dark">
         „Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.”
       </p>
     </div>
     <section id="section--spells" class="section--offer">
-      <h3 class="font__sans-serif">Spells</h3>
-      <p class="font__sans-serif">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et.
-      </p>
-      <img src="img/paige-cody-1121626-unsplash.jpg" alt="" />
+      <div class="offer--wrapper">
+        <h3 class="font__sans-serif">Spells</h3>
+        <p class="font__sans-serif">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et.
+        </p>
+        <button class="font__sans-serif button__green">Order a spell now</button>
+      </div>
+      <img src="img/paige-cody-1121626-unsplash.jpg" alt="a girl holding a book titled 'little book of spells'" />
     </section>
     <div class="section--sign">
       <p class="font__bigger font__sans-serif">
@@ -130,8 +164,43 @@
     </div>
     <footer>
       <ul>
-        <li class="font__dark">Terms and conditions</li>
+        <li class="font__dark">Terms and conditions apply</li>
       </ul>
+      <hr />
+      <div class="font__dark">
+        Award icons made by
+        <a class="font__dark" href="https://www.freepik.com/" title="Freepik"
+          >Freepik</a
+        >
+        from
+        <a class="font__dark" href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+        licensed by
+        <a
+          class="font__dark"
+          href="http://creativecommons.org/licenses/by/3.0/"
+          title="Creative Commons BY 3.0"
+          target="_blank"
+          >CC 3.0 BY</a
+        >
+        <br />
+        Monster icons made by
+        <a
+          class="font__dark"
+          href="https://www.iconfinder.com/Chanut-is"
+          title="Chanut is Industries"
+          >Chanut is Industries</a
+        >
+        licensed by
+        <a
+          class="font__dark"
+          href="http://creativecommons.org/licenses/by/3.0/"
+          title="Creative Commons BY 3.0"
+          target="_blank"
+          >CC 3.0 BY</a
+        >
+      </div>
     </footer>
   </body>
 </html>
