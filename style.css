@@ -1,5 +1,5 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 body {
   --color-green: #56a392;
@@ -135,7 +135,7 @@ button:active {
 }
 .order--slate img:hover {
   animation: enlarge-slate 2s;
-  animation-fill-mode: forwards
+  animation-fill-mode: forwards;
 }
 @keyframes enlarge-slate {
   0% {
@@ -235,16 +235,17 @@ button:active {
   align-self: center;
   max-width: 400px;
   object-fit: contain;
+  width: 100%;
 }
 #section--charms,
 #section--spells {
   background-color: var(--color-dark-purple);
 }
-.button__green{
-background-color: var(--color-green);
+.button__green {
+  background-color: var(--color-green);
 }
-.button__green:hover{
-    background-color:#305d53;
+.button__green:hover {
+  background-color: #305d53;
 }
 #section--potions {
   background-color: var(--color-green);
@@ -260,7 +261,7 @@ background-color: var(--color-green);
   min-width: 50px;
   object-fit: contain;
   height: 100px;
-  margin:0.5rem;
+  margin: 0.5rem;
 }
 footer hr {
   width: 30%;
